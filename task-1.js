@@ -9,11 +9,13 @@ function Person(name, age) {
 
 
     setInterval(() => {
-        console.log(`${this.name} is ${this.age} years old`);
+        console.log(`${this.name} is ${this.age += 1} years old`);
     }, 1000);
 }
 
 const alex = new Person("Alex", 30);
+
+console.log(alex)
 
 
 // Create 4 instances of Person and store them in an array.
